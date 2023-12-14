@@ -1,0 +1,26 @@
+body{
+    background-color: grey;
+    font-family: Arial;
+}
+h1{
+    text-align: center;
+}
+#countLabel{
+    display: block;
+    text-align: center;
+    font-size: 10em;
+}
+#btnContainer{
+    text-align: center;
+}
+.buttons{
+    padding: 10px 20px;
+    font-size: 2em;
+    background-color: rgb(255, 31, 31);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: backround-color 0.25s;
+}
+.buttons:hover{
+    background-color: rgb(161, 0, 0);
+}
