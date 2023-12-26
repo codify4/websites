@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+body{
+    display: flex;
+    background: linear-gradient(200deg,black, red, black);
+    background-attachment: fixed;
+    color: black;
+    font-size: 7em;
+    font-family: 'Orbitron', sans-serif;
+}
+.title{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.clock-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:black;
+}
+.clock{
+    display: inline-block;
+}
