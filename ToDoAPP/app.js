@@ -19,6 +19,10 @@ function addToDo(){
     task.appendChild(check);
 }
 
-check.addEvemtlistener("click", event => {
-    event.target.remove();
+// find index of task we press in order to be able to mark it as done
+console.log(items);
+check.addEvemtlistener("click", () => {
+    items.forEach(item => {
+
+    });
 });
