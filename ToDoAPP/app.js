@@ -1,28 +1,28 @@
 let items = [];
-const add = document.getElementById("add");
-const todoConainer = document.querySelector(".todoConainer");
-
+const todoContainer = document.querySelector(".todoContainer");
+const taskContainer = document.querySelector(".taskContainer");
 
 function addToDo(){
 
     const check = document.createElement("button");
     const task = document.createElement("div");
+    const add = document.getElementById("add").value;
 
-    items.push(add.value);
-    items.forEach(item => {
-        task.textContent = item;
-        task.classList.add("task");
-        check.classList.add("check");
-        check.textContent = '✔';
-    }); 
-    todoConainer.append(task);
+    items.push(add);
+
+    task.classList.add("task");
+    task.textContent = add;
+    task.style.top = "20%"
+
+    check.classList.add("check");
+    check.textContent = '✔';
+
+    taskContainer.append(task);
     task.appendChild(check);
+
+    check.onclick = () => {
+        taskContainer.removeChild(task);
+    };
+
+    todoContainer.scrollTop = todoContainer.scrollHeight;
 }
-
-// find index of task we press in order to be able to mark it as done
-console.log(items);
-check.addEvemtlistener("click", () => {
-    items.forEach(item => {
-
-    });
-});
